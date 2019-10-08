@@ -1,0 +1,53 @@
+//
+
+body *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', san serif;
+}
+
+section{
+    width: 400px;
+    height: auto;
+    border: 1px solid #aaa;
+    padding: 0 0 2em;
+    margin: 3.5em auto 0;
+    border-radius: 4px;
+    position: relative;
+}
+
+header{
+
+    h2{
+        text-align: center;
+        padding: 2rem 0.5rem 1rem;
+        margin: 0;
+        text-decoration: underline;
+    }
+}
+
+form{
+    label, input, button{
+        display: block;
+        width: auto;
+        margin: 0.75rem 0 0.75rem 1.5rem;
+    }
+
+    input{
+        padding: 8px;
+        width: 250px;
+        border: 1px solid cornflowerblue;
+        border-radius: 3px;
+    }
+
+    button{
+        background-color: cornflowerblue;
+        color: white;
+        padding: 5px 30px;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        width: auto;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
