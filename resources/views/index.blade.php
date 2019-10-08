@@ -16,9 +16,11 @@
             <form action="route('login')" method="post">
                 <label for="email">Email address:</label>
                 <input type="email" placeholder="Enter your email address" />
+                <div class="g-recaptcha" data-sitekey="6LdsjLwUAAAAACSqotFUsxvrtBYuS1sOako6fHkF"></div>
                 <button type="submit" >Submit</button>
             </form>
         </section>
     </main>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 </html>
