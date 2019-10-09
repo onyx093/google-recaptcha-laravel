@@ -13,10 +13,14 @@
         <section>
             <header><h2>reCaptcha Authentication Login</h2></header>
     
-            <form action="route('login')" method="post">
+            <form action="{{ route('login') }}" method="post">
+                @csrf
+                
                 <label for="email">Email address:</label>
-                <input type="email" placeholder="Enter your email address" />
+                <input name="email" type="email" placeholder="Enter your email address" />
+                <small class="red-text" >{{ $errors->first('email') }}</small>
                 <div class="g-recaptcha" data-sitekey="6LdsjLwUAAAAACSqotFUsxvrtBYuS1sOako6fHkF"></div>
+                <small class="red-text" >{{ $errors->first('g-recaptcha-response') }}</small>
                 <button type="submit" >Submit</button>
             </form>
         </section>

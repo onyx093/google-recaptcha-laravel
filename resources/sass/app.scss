@@ -27,7 +27,7 @@ header{
 }
 
 form{
-    label, input, button, div.g-recaptcha{
+    label, input, small, button, div.g-recaptcha{
         display: block;
         width: auto;
         margin: 0.75rem 0 0.75rem 1.5rem;
@@ -50,4 +50,8 @@ form{
         font-size: 14px;
         line-height: 1.5;
     }
+}
+
+.red-text{
+    color: crimson;
 }

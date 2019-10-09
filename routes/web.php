@@ -17,5 +17,6 @@
  */
 
 Route::get('/', 'ReCaptchaController@showLogin')->name('show-login');
-Route::post('/', 'ReCaptchaController@login')->name('login');
+Route::get('/success', 'ReCaptchaController@showSuccess')->name('show-success');
+Route::post('/login', 'ReCaptchaController@login')->name('login');
 

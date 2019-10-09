@@ -23,6 +23,7 @@ header h2 {
 
 form label,
 form input,
+form small,
 form button,
 form div.g-recaptcha {
   display: block;
@@ -46,5 +47,9 @@ form button {
   width: auto;
   font-size: 14px;
   line-height: 1.5;
+}
+
+.red-text {
+  color: crimson;
 }
 
